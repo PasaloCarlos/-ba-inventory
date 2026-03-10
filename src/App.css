@@ -6,17 +6,19 @@
 }
 
 :root {
-  --bg: #0f0f0f;
-  --surface: #1a1a1a;
-  --surface2: #242424;
-  --border: #333;
-  --text: #e8e8e8;
-  --text-dim: #999;
-  --accent: #c8a2e8;
-  --accent-dim: #9b6bc4;
-  --green: #4ade80;
-  --yellow: #fbbf24;
-  --red: #f87171;
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --surface2: #1e1e1e;
+  --border: #2a2a2a;
+  --text: #e0e0e0;
+  --text-dim: #8a8a8a;
+  --accent: #6b7a5e;
+  --accent-dim: #556349;
+  --accent-light: #8a9e7a;
+  --silver: #c0c0c0;
+  --green: #6b7a5e;
+  --yellow: #c4a94d;
+  --red: #c45a5a;
   --radius: 8px;
 }
 
@@ -46,8 +48,14 @@ body {
   text-align: center;
 }
 
+.login-logo {
+  width: 160px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
 .login-card h1 {
-  color: var(--accent);
+  color: var(--silver);
   font-size: 1.5rem;
   margin-bottom: 0.25rem;
 }
@@ -72,7 +80,7 @@ body {
 
 .login-card input:focus {
   outline: none;
-  border-color: var(--accent);
+  border-color: var(--silver);
 }
 
 .login-card button {
@@ -115,8 +123,13 @@ body {
   gap: 0.75rem;
 }
 
+.header-logo {
+  height: 45px;
+  width: auto;
+}
+
 .header h1 {
-  color: var(--accent);
+  color: var(--silver);
   font-size: 1.25rem;
 }
 
@@ -148,7 +161,7 @@ body {
 .total-amount {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--green);
+  color: var(--accent-light);
 }
 
 .btn-logout {
@@ -189,7 +202,7 @@ body {
 
 .search-input:focus {
   outline: none;
-  border-color: var(--accent);
+  border-color: var(--silver);
 }
 
 .stats {
@@ -302,17 +315,17 @@ tr:hover {
 }
 
 .status-in {
-  background: rgba(74, 222, 128, 0.15);
-  color: var(--green);
+  background: rgba(107, 122, 94, 0.2);
+  color: var(--accent-light);
 }
 
 .status-low {
-  background: rgba(251, 191, 36, 0.15);
+  background: rgba(196, 169, 77, 0.15);
   color: var(--yellow);
 }
 
 .status-out {
-  background: rgba(248, 113, 113, 0.15);
+  background: rgba(196, 90, 90, 0.15);
   color: var(--red);
 }
 
@@ -334,8 +347,8 @@ tr:hover {
 }
 
 .btn-edit:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--silver);
+  color: var(--silver);
 }
 
 .btn-delete:hover {
@@ -392,7 +405,7 @@ tr:hover {
 .modal input:focus,
 .modal select:focus {
   outline: none;
-  border-color: var(--accent);
+  border-color: var(--silver);
 }
 
 .form-row {
@@ -405,7 +418,7 @@ tr:hover {
 }
 
 .value-preview {
-  color: var(--green);
+  color: var(--accent-light);
   font-weight: 600;
   font-size: 0.9rem;
 }

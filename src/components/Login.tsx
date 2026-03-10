@@ -20,7 +20,7 @@ export default function Login() {
   return (
     <div className="login-container">
       <div className="login-card">
-        <h1>Braided by Aliyah</h1>
+        <img src={import.meta.env.BASE_URL + 'logo.png'} alt="Braided by Aliyah" className="login-logo" />
         <p className="login-subtitle">Inventory Management</p>
         <form onSubmit={handleLogin}>
           <input

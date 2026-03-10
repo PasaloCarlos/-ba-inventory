@@ -12,7 +12,7 @@ export default function Header({ totalValue }: HeaderProps) {
   return (
     <header className="header">
       <div className="header-left">
-        <h1>Braided by Aliyah</h1>
+        <img src={import.meta.env.BASE_URL + 'logo.png'} alt="Braided by Aliyah" className="header-logo" />
         <span className="header-location">Humacao</span>
       </div>
       <div className="header-right">
